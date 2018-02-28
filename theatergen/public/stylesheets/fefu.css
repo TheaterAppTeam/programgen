@@ -28,7 +28,7 @@ footer {color:black;}
 }
 
 .one {
-  grid-column: 4/5;
+  grid-column: 2/8;
   grid-row: 1;
   background-color: black;
   color: white;
