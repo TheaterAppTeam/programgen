@@ -16,16 +16,7 @@
     text-align: left;
 }
 
-  p.bottom {
-    border-bottom: 10px double black;
-  }
 
-  p.role{
-    text-align: left;
-  }
-  p.person{
-    text-align: right;
-  }
   .column{
     float: left;
     width: 650;
@@ -37,10 +28,7 @@
     clear: both;
   }
 
-  p.double{
-    border-style: double;
-    border-spacing: 15px;
-  }
+
   p.times{
     font-family: "Times New Roman", Times, serif;
   }
@@ -52,12 +40,44 @@
 }
 
 .one {
-  grid-column: 1/9;
+  grid-column: 3/7;
   grid-row: 1;
 
+}
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .two {
   grid-column: 2/8;
   grid-row: 2;
+}
+
+.three {
+  grid-column: 2/8;
+  grid-row: 12;
+}
+
+.four{
+  grid-column: 2/8;
+  grid-row: 13;
+}
+
+
+p.double{
+  border-style: double;
+  border-spacing: 25px;
+  border-width: 10px;
 }

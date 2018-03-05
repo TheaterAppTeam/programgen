@@ -40,6 +40,7 @@
   p.double{
     border-style: double;
     border-spacing: 15px;
+    border-width: 10px;
   }
   p.times{
     font-family: "Times New Roman", Times, serif;
@@ -52,10 +53,35 @@
 }
 
 .one {
-  grid-column: 1/9;
+  grid-column: 2/8;
   grid-row: 1;
 
 }
+
+ul.leaders {
+    max-width: 50em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
 
 .two {
   grid-column: 2/8;
