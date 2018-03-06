@@ -14,6 +14,16 @@ router.get('/fefu',function(req,res, next){
 	  });
 });
 
+router.get('/fefu/ps',function(req,res, next){
+	res.render('ps',
+	  {title:'Fefu and her Friends',
+		 staff:[
+			 {title:"Assistant Directors",people:"Andrew Child, Joelle Robinson"},
+			 {title:"Assistant Stage Managers",people:"Delaney Palma, Emily Politi"}
+		 ]
+	  });
+});
+
 router.get('/itw',function(req,res, next){
 	res.render('fefu',
 	  {title:'Into the Woods',

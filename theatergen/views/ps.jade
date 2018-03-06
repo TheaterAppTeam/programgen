@@ -1,0 +1,12 @@
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/ps.css')
+	body
+		.one
+			center
+				| Production Staff
+			ul.leaders
+				each val in staff
+					li
+						span= val.title
+						span= val.people
