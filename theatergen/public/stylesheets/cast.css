@@ -1,0 +1,109 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 2/8;
+  grid-row: 1;
+}
+
+.cast{
+  font-size:200%;
+  font-family:optima;
+}
+
+.fefu{
+  font-size:350%;
+  font-family:apple chancery;
+}
+
+.order{
+  font-size:230%;
+  font-family:optima;
+}
+
+.two {
+  grid-column: 2/8;
+  grid-row: 3;
+}
+.column{
+  float: left;
+  width: 650;
+}
+
+.row:after{
+  content: "";
+  display:table;
+  clear: both;
+}
+
+ul.leaders {
+    max-width: 50em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+.three {
+  grid-column: 2/8;
+  grid-row: 5;
+}
+
+p.triple{
+  border-bottom: 15px double black;
+}
+p.single{
+  border-bottom: 5px black;
+}
+
+.four {
+  grid-column: 2/8;
+  grid-row: 6;
+}
+
+p.double{
+  border-style: double;
+  border-spacing: 25px;
+  border-width: 10px;
+}

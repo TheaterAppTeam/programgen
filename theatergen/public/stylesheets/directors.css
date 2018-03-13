@@ -1,0 +1,41 @@
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#main{
+  border-style: double;
+  border-spacing: 10px;
+  border-width: 13px;
+}
+
+.one {
+  grid-column: 2/8;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2/8;
+  grid-row: 3;
+}

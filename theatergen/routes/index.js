@@ -14,6 +14,21 @@ router.get('/fefu/front',function(req,res, next){
 	  });
 });
 
+router.get('/fefu/directors',function(req,res, next){
+	res.render('notes',
+	  );
+});
+
+router.get('/fefu/cast',function(req,res, next){
+	res.render('cast',
+	  );
+});
+
+router.get('/fefu/bio',function(req,res, next){
+	res.render('bio',
+	  );
+});
+
 router.get('/fefu/ps',function(req,res, next){
 	res.render('ps2',
 	  );
