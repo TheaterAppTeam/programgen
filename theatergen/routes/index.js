@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/fefu/front',function(req, res, next){
+router.get('/fefu/title',function(req, res, next){
 	res.render('title',
 	  {
       title:'Fefu and her Friends',
@@ -23,7 +23,7 @@ router.get('/fefu/front',function(req, res, next){
 	  });
 });
 
-router.get('/fefu/directors',function(req, res, next){
+router.get('/fefu/notes',function(req, res, next){
 	res.render('notes',
 	  );
 });
@@ -43,7 +43,7 @@ router.get('/fefu/ps',function(req, res, next){
 	  );
 });
 
-router.get('/fefu/friends',function(req, res, next){
+router.get('/fefu/sponsors',function(req, res, next){
 	res.render('sponsors',
 	  );
 });
