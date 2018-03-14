@@ -39,8 +39,19 @@ router.get('/fefu/bio',function(req, res, next){
 });
 
 router.get('/fefu/ps',function(req, res, next){
-	res.render('ps2',
-	  );
+	res.render('ps',
+  {
+    staff: [
+              {
+                role: 'Fefu',
+                people: 'Rebecca Meyers'
+              },
+              {
+                role: 'Cindy',
+                people: 'Keturah'
+              }
+          ]
+  });
 });
 
 router.get('/fefu/friends',function(req, res, next){
