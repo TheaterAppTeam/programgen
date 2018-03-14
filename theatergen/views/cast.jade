@@ -16,30 +16,10 @@ html
             br
       .two
         ul.leaders(style='font-size:200%; font-family:optima;')
-          li
-            span Fefu
-            span Rebecca Myers
-          li
-            span Cindy
-            span Keturah Walker
-          li
-            span Christina
-            span Roopa Boodhun
-          li
-            span Julia
-            span Sara Kenney
-          li
-            span Emma
-            span Haia Bchiri
-          li
-            span Paula
-            span Remony Perlman
-          li
-            span Sue
-            span Emily Bisno
-          li
-            span Cecilia
-            span Alex Wu
+          each val in cast
+            li
+              span= val.role
+              span= val.people
       .three
         p.triple
         p.single

@@ -30,11 +30,43 @@ router.get('/fefu/notes',function(req, res, next){
 
 router.get('/fefu/cast',function(req, res, next){
 	res.render('cast',
-	  );
+  {
+    cast: [
+              {
+                role: 'Fefu',
+                people: 'Rebecca Meyers'
+              },
+              {
+                role: 'Cindy',
+                people: 'Keturah'
+              },
+              {
+                role: 'Julia',
+                people: 'Sara Kenney'
+              },
+              {
+                role: 'Emma',
+                people: 'Haia Bchiri'
+              },
+              {
+                role: 'Paula',
+                people: 'Remony Perlman'
+              },
+              {
+                role: 'Sue',
+                people: 'Emily Bisno'
+              },
+              {
+                role: 'Cecilia',
+                people: 'Alex Wu'
+              }
+          ]
+  });
 });
 
 router.get('/fefu/bio',function(req, res, next){
 	res.render('bio',
+
 	  );
 });
 
@@ -49,6 +81,26 @@ router.get('/fefu/ps',function(req, res, next){
               {
                 role: 'Cindy',
                 people: 'Keturah'
+              },
+              {
+                role: 'Julia',
+                people: 'Sara Kenney'
+              },
+              {
+                role: 'Emma',
+                people: 'Haia Bchiri'
+              },
+              {
+                role: 'Paula',
+                people: 'Remony Perlman'
+              },
+              {
+                role: 'Sue',
+                people: 'Emily Bisno'
+              },
+              {
+                role: 'Cecilia',
+                people: 'Alex Wu'
               }
           ]
   });
