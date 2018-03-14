@@ -9,7 +9,7 @@ html
               | Cast of
             br
             span.fefu
-              i Fefu and Her Friends
+              i #{title}
             br
             span.order
               | in order of appearance
@@ -27,14 +27,8 @@ html
       .four
         center
           p.double(style='font-size:190%; font-family:optima;')
+            | #{setting}
             br
-            |       Location: New England, Spring 1935
-            br
-            |       Part 1-Noon.
-            br
-            |       Part 2-Afternoon
-            br
-            |       Part 3-Evening
-            br
-            br
-            br
+            each val in acts
+              | #{val.act} #{val.location}
+              br

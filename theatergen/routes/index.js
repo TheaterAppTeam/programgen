@@ -31,6 +31,7 @@ router.get('/fefu/notes',function(req, res, next){
 router.get('/fefu/cast',function(req, res, next){
 	res.render('cast',
   {
+    title: 'Fefu & Her Friends',
     cast: [
               {
                 role: 'Fefu',
@@ -60,7 +61,22 @@ router.get('/fefu/cast',function(req, res, next){
                 role: 'Cecilia',
                 people: 'Alex Wu'
               }
-          ]
+          ],
+      setting : 'Location: New England, Spring 1935',
+      acts: [
+        {
+          act: 'Part 1-',
+          location: 'Noon'
+        },
+        {
+          act: 'Part 2-',
+          location: 'Afternoon'
+        },
+        {
+          act: 'Part 3-',
+          location: 'Evening'
+        }
+      ]
   });
 });
 
