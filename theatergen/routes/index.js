@@ -43,8 +43,8 @@ router.get('/fefu/ps',function(req, res, next){
 	  );
 });
 
-router.get('/fefu/sponsors',function(req, res, next){
-	res.render('sponsors',
+router.get('/fefu/friends',function(req, res, next){
+	res.render('friends',
 	  );
 });
 
