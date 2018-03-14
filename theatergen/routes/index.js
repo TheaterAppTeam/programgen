@@ -6,40 +6,49 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/fefu/front',function(req,res, next){
+router.get('/fefu/front',function(req, res, next){
 	res.render('title',
-	  {title:'Fefu and her Friends',
-		 playwright:'María Irene Fornés',
-		 director:'Adrianne Krstansky',
+	  {
+      title:'Fefu and her Friends',
+      chair: 'Susan Dibble',
+      artisticDirector: 'Robert Walsh',
+		  playwright:'María Irene Fornés',
+		  director:'Adrianne Krstansky',
+      scenicDesigner: 'Cameron Anderson',
+      costumeDesigner: 'Mary Hurd',
+      lightingDesigner: 'Jeff Adelberg',
+      soundDesigner: 'Dewey Dellay',
+      stageManager: 'Hannah Uher',
+      publisher: 'Broadway Play Publishing Inc, NYC',
 	  });
 });
 
-router.get('/fefu/directors',function(req,res, next){
+router.get('/fefu/directors',function(req, res, next){
 	res.render('notes',
 	  );
 });
 
-router.get('/fefu/cast',function(req,res, next){
+router.get('/fefu/cast',function(req, res, next){
 	res.render('cast',
 	  );
 });
 
-router.get('/fefu/bio',function(req,res, next){
+router.get('/fefu/bio',function(req, res, next){
 	res.render('bio',
 	  );
 });
 
-router.get('/fefu/ps',function(req,res, next){
+router.get('/fefu/ps',function(req, res, next){
 	res.render('ps2',
 	  );
 });
 
-router.get('/fefu/friends',function(req,res, next){
+router.get('/fefu/friends',function(req, res, next){
 	res.render('sponsors',
 	  );
 });
 
-router.get('/itw',function(req,res, next){
+router.get('/itw',function(req, res, next){
 	res.render('title',
 	  {title:'Into the Woods',
 		 playwright:'Disney',
