@@ -21,11 +21,13 @@ html
               each val in producerCircle
                 | #{val.donor}
                 br
+                br
             p(style='font-size:185%; font-family:optima;')
               b Playwrights Circle ($2,500 -$4,999)
             p(style='font-size:130%; font-family:optima;')
               each val in playwrightCircle
                 | #{val.donor}
+                br
                 br
             p(style='font-size:185%; font-family:optima;')
               b Designers Circle ($1,000 - $2,499)
@@ -33,11 +35,13 @@ html
               each val in designerCircle
                 | #{val.donor}
                 br
+                br
             p(style='font-size:185%; font-family:optima;')
               b Artists Circle ($500 - $999)
             p(style='font-size:130%; font-family:optima;')
               each val in artistCircle
                 | #{val.donor}
+                br
                 br
             p(style='font-size:185%; font-family:optima;')
               b Leading Role ($250 - $499)
@@ -45,91 +49,33 @@ html
               each val in leadingRole
                 | #{val.donor}
                 br
+                br
             p(style='font-size:185%; font-family:optima;')
               b Supporting Role ($100 - $249)
             p(style='font-size:130%; font-family:optima;')
               each val in supportingRole
                 | #{val.donor}
                 br
+                br
 
           .column
             // style="background-color:#bbb;"
             p(style='font-size:130%; font-family:optima;')
-              | Paula M. Marcus
-              br
-              br
-              |             Constance Simo Rosenblum
-              br
-              br
-              i In Memory of Robert J. Rosenblum
-              br
-              br
-              |               Robert Stephen Tupper
+              each val in supportingRole2
+                | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
+                br
+                br
             p(style='font-size:185%; font-family:optima;')
               b Arts Patron (up to $99)
             p(style='font-size:130%; font-family:optima;')
-              | Michael T. Allosso & Peggy Whitefield
-              br
-              br
-              |             Julio & Olympia Contrada
-              br
-              br
-              |             Julia Davis
-              br
-              br
-              |             Alyson Blair Eller
-              br
-              br
-              |             Samuel M. Fuchs
-              br
-              br
-              |             Lenore F. & Irving Goldstein
-              br
-              br
-              |             Bethany Marie Greenbaum
-              br
-              br
-              |             Felix Kreisel
-              br
-              br
-              |             Joy Caroline Liebman
-              br
-              br
-              |             Sean P. & Margaret S. McCarthy
-              br
-              br
-              |             Valy & Kathy Menkin
-              br
-              br
-              |             Sarah Minkoff
-              br
-              br
-              |             Joseph & Miriam More
-              br
-              br
-              |             Marie E. & John I. Murray
-              br
-              br
-              |             Joanne & John J. O'Donnell
-              br
-              br
-              |             Iris J. Raylesberg & Michael L. Rozansky
-              br
-              br
-              i In Honor of Chaye Zuckerman Shapot
-              br
-              br
-              |             Karen S. Ryker
-              br
-              br
-              |             Laury P. & Mark H. Sorensen
-              i In Honor of Sally Glickman
-              br
-              br
-              |             James A. True
-              br
-              br
-              |             Sarai Chava Warsoff
+              each val in artParton
+                | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
+                br
+                br
       .three
         center
           p(style='font-size:500%; font-family:optima;')
@@ -138,7 +84,4 @@ html
           | #{notes}
       .four
         p.double(style='font-size:150%; font-family:optima;')
-          | The 2017-18 Brandeis Department of Theater Arts season is made possible through generous
-          | support from the Harold and Mimi Steinberg Charitable Trust; the Laurie Foundation; the Robin,
-          | Barbara and Malcolm L. Sherman Endowment for the Performing Arts; the Brandeis Arts Council;
-          | the Herbert and Kim Marie Beigel New Play Fund; and the Poses Fund.
+          | #{comments}

@@ -141,70 +141,183 @@ router.get('/fefu/friends',function(req, res, next){
     producerCircle:
       [
         {
-          donor: 'The Blanche and Irving Laurie Foundation'
+          donor: 'The Blanche and Irving Laurie Foundation',
+          inHonor: ''
         },
         {
-          donor: 'Harold & Mimi Steinberg Charitable Trust'
+          donor: 'Harold & Mimi Steinberg Charitable Trust',
+          inHonor: ''
         }
       ],
     playwrightCircle:
       [
         {
-          donor: 'FJN Charitable Foundation'
+          donor: 'FJN Charitable Foundation',
+          inHonor: ''
         }
       ],
     designerCircle:
       [
         {
-          donor: 'Sally Marshall Glickman'
+          donor: 'Sally Marshall Glickman',
+          inHonor: ''
         },
         {
-          donor:'Nancy and Maurice Lazarus Fund'
+          donor:'Nancy and Maurice Lazarus Fund',
+          inHonor: ''
         }
       ],
     artistCircle:
       [
         {
-          donor: 'Batja Sanders Astrachan'
+          donor: 'Batja Sanders Astrachan',
+          inHonor: ''
         },
         {
-          donor: 'Mohit Gourisaria'
+          donor: 'Mohit Gourisaria',
+          inHonor: ''
         }
       ],
     leadingRole:
       [
         {
-          donor: 'Terry E.D. & Cornelia Duryee Moore'
+          donor: 'Terry E.D. & Cornelia Duryee Moore',
+          inHonor: ''
         }
       ],
     supportingRole:
       [
         {
-          donor: 'Norman A. & Sydney Rose Abend'
+          donor: 'Norman A. & Sydney Rose Abend',
+          inHonor: ''
         },
         {
-          donor: 'Malik B. El-Amin'
+          donor: 'Malik B. El-Amin',
+          inHonor: ''
         },
         {
-          donor: 'Lisa H. Fleischman'
+          donor: 'Lisa H. Fleischman',
+          inHonor: ''
         },
         {
-          donor: 'Scott M. & Marcia J. Glickman'
+          donor: 'Scott M. & Marcia J. Glickman',
+          inHonor: ''
         },
         {
-          donor: 'Emily Griffin'
+          donor: 'Emily Griffin',
+          inHonor: ''
         },
         {
-          donor: 'David J. & Mary D. Kaye'
+          donor: 'David J. & Mary D. Kaye',
+          inHonor: ''
         },
         {
-          donor: 'Roberta Willison & Scott T. Kisker'
+          donor: 'Roberta Willison & Scott T. Kisker',
+          inHonor: ''
         },
         {
-          donor: 'Leona & Mel Lazar'
+          donor: 'Leona & Mel Lazar',
+          inHonor: ''
         }
       ],
-      notes: 'We were so fortunate to have documentary filmmaker Michelle Memran and award winning theater director join us for rehearsals. Michelle has spent the last couple of years making a film about the life and work for Maria Irene Fornes entitled ‘The Rest I Make Up’. For more information, please go to therestimakeup.com.'
+      supportingRole2:
+      [
+        {
+          donor: 'Paula M. Marcus',
+          inHonor: ''
+        },
+        {
+          donor: 'Constance Simo Rosenblum',
+          inHonor: 'In Memory of Robert J. Rosenblum'
+        },
+        {
+          donor: 'Robert Stephen Tupper',
+          inHonor: ''
+        }
+      ],
+      artParton: [
+        {
+          donor: 'Michael T. Allosso & Peggy Whitefield',
+          inHonor: ''
+        },
+        {
+          donor: 'Julio & Olympia Contrada',
+          inHonor: ''
+        },
+        {
+          donor: 'Julia Davis',
+          inHonor: ''
+        },
+        {
+          donor: 'Alyson Blair Eller',
+          inHonor: ''
+        },
+        {
+          donor: 'Samuel M. Fuchs',
+          inHonor: ''
+        },
+        {
+          donor: 'Lenore F. & Irving Goldstein',
+          inHonor: ''
+        },
+        {
+          donor: 'Bethany Marie Greenbaum',
+          inHonor: ''
+        },
+        {
+          donor: 'Felix Kreisel',
+          inHonor: ''
+        },
+        {
+          donor: 'Joy Caroline Liebman',
+          inHonor: ''
+        },
+        {
+          donor: 'Sean P. & Margaret S. McCarthy',
+          inHonor: ''
+        },
+        {
+          donor: 'Valy & Kathy Menkin',
+          inHonor: ''
+        },
+        {
+          donor: 'Sarah Minkoff',
+          inHonor: ''
+        },
+        {
+          donor: 'Joseph & Miriam More',
+          inHonor: ''
+        },
+        {
+          donor: 'Marie E. & John I. Murray',
+          inHonor: ''
+        },
+        {
+          donor: 'Joanne & John J. O\'Donnell',
+          inHonor: ''
+        },
+        {
+          donor: 'Iris J. Raylesberg & Michael L. Rozansky',
+          inHonor: 'In Honor of Chaye Zuckerman Shapot'
+        },
+        {
+          donor: 'Karen S. Ryker',
+          inHonor: ''
+        },
+        {
+          donor: 'Laury P. & Mark H. Sorensen',
+          inHonor: 'In Honor of Sally Glickman'
+        },
+        {
+          donor: 'James A. True',
+          inHonor: ''
+        },
+        {
+          donor: 'Sarai Chava Warsoff'
+        }
+      ],
+      notes: 'We were so fortunate to have documentary filmmaker Michelle Memran and award winning theater director join us for rehearsals. Michelle has spent the last couple of years making a film about the life and work for Maria Irene Fornes entitled ‘The Rest I Make Up’. For more information, please go to therestimakeup.com.',
+      comments: ' The 2017-18 Brandeis Department of Theater Arts season is made possible through generous support from the Harold and Mimi Steinberg Charitable Trust; the Laurie Foundation; the Robin, Barbara and Malcolm L. Sherman Endowment for the Performing Arts; the Brandeis Arts Council; the Herbert and Kim Marie Beigel New Play Fund; and the Poses Fund.'
     });
 });
 
