@@ -26,7 +26,7 @@ router.get('/fefu/title',function(req, res, next){
 router.get('/fefu/notes',function(req, res, next){
 	res.render('notes',
     {
-      notes:  [
+      notes: [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
           people: 'Joelle Robinson',
@@ -38,9 +38,7 @@ router.get('/fefu/notes',function(req, res, next){
           role: 'Assistant Director'
         }
       ]
-    }
-
-	  );
+    });
 });
 
 router.get('/fefu/cast',function(req, res, next){
@@ -139,7 +137,75 @@ router.get('/fefu/ps',function(req, res, next){
 
 router.get('/fefu/friends',function(req, res, next){
 	res.render('friends',
-	  );
+  {
+    producerCircle:
+      [
+        {
+          donor: 'The Blanche and Irving Laurie Foundation'
+        },
+        {
+          donor: 'Harold & Mimi Steinberg Charitable Trust'
+        }
+      ],
+    playwrightCircle:
+      [
+        {
+          donor: 'FJN Charitable Foundation'
+        }
+      ],
+    designerCircle:
+      [
+        {
+          donor: 'Sally Marshall Glickman'
+        },
+        {
+          donor:'Nancy and Maurice Lazarus Fund'
+        }
+      ],
+    artistCircle:
+      [
+        {
+          donor: 'Batja Sanders Astrachan'
+        },
+        {
+          donor: 'Mohit Gourisaria'
+        }
+      ],
+    leadingRole:
+      [
+        {
+          donor: 'Terry E.D. & Cornelia Duryee Moore'
+        }
+      ],
+    supportingRole:
+      [
+        {
+          donor: 'Norman A. & Sydney Rose Abend'
+        },
+        {
+          donor: 'Malik B. El-Amin'
+        },
+        {
+          donor: 'Lisa H. Fleischman'
+        },
+        {
+          donor: 'Scott M. & Marcia J. Glickman'
+        },
+        {
+          donor: 'Emily Griffin'
+        },
+        {
+          donor: 'David J. & Mary D. Kaye'
+        },
+        {
+          donor: 'Roberta Willison & Scott T. Kisker'
+        },
+        {
+          donor: 'Leona & Mel Lazar'
+        }
+      ],
+      notes: 'We were so fortunate to have documentary filmmaker Michelle Memran and award winning theater director join us for rehearsals. Michelle has spent the last couple of years making a film about the life and work for Maria Irene Fornes entitled ‘The Rest I Make Up’. For more information, please go to therestimakeup.com.'
+    });
 });
 
 router.get('/itw',function(req, res, next){
