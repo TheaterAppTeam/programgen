@@ -7,20 +7,10 @@ html
           p(style='font-size:350%; font-family:times;')
             | Director's Notes
       .two
-        p(style='font-size:170%; font-family:optima;')
-          i Fefu and Her Friends
-          |  has been a project of discovery. Through countless hours of
-          |       rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.
-        div(align='right')
-          p(style='font-size:180%; font-family:optima;')
-            | Joelle Robinson, Assistant Director
-        br
-        p(style='font-size:170%; font-family:optima;')
-          | Fornés’ gift with
-          i Fefu
-          |  is that, in creating a piece which revels in being about so little (a group of women gathering to rehearse for a fundraiser) she has built a vehicle that encompasses nuances of truths which manage to dually seem to be both unearthed and self-imposed. In our scuffling with the text, it seems to have snowballed through contemporary social and political ideologies, festooning itself in the garb of exactly what we need to see right now on our campus. The unsupposing genius of Fornes is that her attention to deceptively insignificant details allows her work to take on hugely impactful commentary. While it seems to be our constant job as theatre artists to defend why our work is pertinent right now, because of Fornés’ ability to nestle her plays deep within the shadows of the human experience, we have not had that challenge with
-          i Fefu
-          | .
-        div(align='right')
-          p(style='font-size:180%; font-family:optima;')
-            | Andrew Child, Assistant Director
+        each val in notes
+          p(style='font-size:170%; font-family:optima;')
+            | #{val.note}
+          div(align='right')
+            p(style='font-size:180%; font-family:optima;')
+              | #{val.people}, #{val.role}
+          br
