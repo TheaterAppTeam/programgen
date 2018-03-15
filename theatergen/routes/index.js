@@ -100,9 +100,9 @@ router.get('/fefu/bio',function(req, res, next){
 });
 
 router.get('/fefu/ps',function(req, res, next){
-	res.render('ps',
+	res.render('ps2',
   {
-    staff: [
+    prodStaff: [
               {
                 role: 'Fefu',
                 people: 'Rebecca Meyers'

@@ -8,6 +8,12 @@ html
           p.bottom(style='font-size:275%; font-family:optima;')
             b Production Staff
         ul.leaders(style='font-size:170%; font-family:optima;')
+          each val in prodStaff
+            li
+              span= val.role
+              span= val.people
+
+
           li
             span
               | Assistant Directors
