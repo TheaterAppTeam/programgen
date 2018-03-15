@@ -20,6 +20,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in producerCircle
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
             p(style='font-size:185%; font-family:optima;')
@@ -27,6 +29,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in playwrightCircle
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
             p(style='font-size:185%; font-family:optima;')
@@ -34,6 +38,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in designerCircle
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
             p(style='font-size:185%; font-family:optima;')
@@ -41,6 +47,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in artistCircle
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
             p(style='font-size:185%; font-family:optima;')
@@ -48,6 +56,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in leadingRole
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
             p(style='font-size:185%; font-family:optima;')
@@ -55,6 +65,8 @@ html
             p(style='font-size:130%; font-family:optima;')
               each val in supportingRole
                 | #{val.donor}
+                if val.inHonor != ''
+                  i  #{val.inHonor}
                 br
                 br
 
@@ -65,8 +77,8 @@ html
                 | #{val.donor}
                 if val.inHonor != ''
                   i  #{val.inHonor}
-                br
-                br
+                  br
+                  br
             p(style='font-size:185%; font-family:optima;')
               b Arts Patron (up to $99)
             p(style='font-size:130%; font-family:optima;')

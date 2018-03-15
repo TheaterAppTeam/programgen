@@ -175,7 +175,7 @@ router.get('/fefu/friends',function(req, res, next){
         },
         {
           donor: 'Mohit Gourisaria',
-          inHonor: ''
+          inHonor: 'In Honor of Adrianne Krstansky'
         }
       ],
     leadingRole:
