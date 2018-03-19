@@ -104,32 +104,85 @@ router.get('/fefu/ps',function(req, res, next){
   {
     prodStaff: [
               {
-                role: 'Fefu',
-                people: 'Rebecca Meyers'
+                role: 'Assistant Director',
+                people: ['Andrew Child', 'Joelle Robinson']
               },
               {
-                role: 'Cindy',
-                people: 'Keturah'
+                role: 'Assistant Stage Manager',
+                people: ['Delaney Palma', 'Emily Politi']
               },
               {
-                role: 'Julia',
-                people: 'Sara Kenney'
+                role: 'Prop Master',
+                people: ['Maggie Cooper']
               },
               {
-                role: 'Emma',
-                people: 'Haia Bchiri'
+                role: 'Scenic Charge',
+                people: ['Holly Diaz']
               },
               {
-                role: 'Paula',
-                people: 'Remony Perlman'
+                role: 'Shop Supervisor',
+                people: ['Thomas Farrell']
               },
               {
-                role: 'Sue',
-                people: 'Emily Bisno'
+                role: 'Carpenters',
+                people: ['Sivan Ertel', 'Luis Flores', 'Molly Rocca']
               },
               {
-                role: 'Cecilia',
-                people: 'Alex Wu'
+                role: 'Run Crew',
+                people: ['Emily Hancock', 'Melody Wilkenfeld Wu']
+              },
+              {
+                role: 'Electricians',
+                people: ['Kaeda Morales', 'Steven Reilly', 'Jacob Margolis',
+                'Anthony Fimmano', 'Zachary Kolar',
+                'Megan McClory', 'Noah Mark']
+              },
+              {
+                role: 'Lighting Programmer',
+                people: ['Megan McClory']
+              },
+              {
+                role: 'Sound Board Operator',
+                people: ['Zain Walker']
+              },
+              {
+                role: 'Open Caption Designer',
+                people: ['Andrew Child']
+              },
+              {
+                role: 'Open Caption Operator',
+                people: ['Isabella Stork']
+              },
+              {
+                role: 'First Hand',
+                people: ['Sally Perry']
+              },
+              {
+                role: 'Costume Construction',
+                people: ['Marisol Abreu', 'Haia Bchiri', 'Ellie McKnight', 'Remony Perlman']
+              },
+              {
+                role: 'Dressers',
+                people: ['Riely Allen', 'Kate Kesselman']
+              },
+              {
+                role: 'House Manager',
+                people: ['Katie Sumi']
+              },
+              {
+                role: 'Head Ushers',
+                people: ['Tamara Garcia', 'Brenda Shen']
+              },
+              {
+                role: 'Front of House',
+                people: ['Ben Astrachan', 'Jessica Lam', 'Anna Sherman', 'Jared Snyder',
+                 'Alina Sipp-Alpers', 'Gabe Walker', 'Arya Vanetsky']
+              },
+              {
+                role: 'Box Office',
+                people: ['Brittany Duncan', 'Lily Feinson', 'Tafara Gava',
+                'Melina Gross', 'Emma Gutman', 'Emma Hanselman', 'Jamie Jason',
+                 'Candice Jiang', 'Emily Kaplan', 'Carmen Lopez-Landaverde']
               }
           ]
   });
