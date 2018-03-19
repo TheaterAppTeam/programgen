@@ -13,9 +13,13 @@ html
               span= val.role
               if val.people.length > 3
                 each person, index in val.people
-                  if index == 3
+                  if index % 2 == 0 && index != 0
                     br
-                  span= person
+                    span
+                  if index == val.people.length-1
+                    span= person
+                  else
+                    span= person+','
               else
                 span= val.people
         center
