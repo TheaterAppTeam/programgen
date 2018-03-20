@@ -1,35 +1,28 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/fefu/title',function(req, res, next){
-	res.render('title',
-	  {
+fefu = 
+{
+ title:
+  {
       title:'Fefu and her Friends',
       chair: 'Susan Dibble',
       artisticDirector: 'Robert Walsh',
-		  playwright:'María Irene Fornés',
-		  director:'Adrianne Krstansky',
+                  playwright:'María Irene Fornés',
+                  director:'Adrianne Krstansky',
       scenicDesigner: 'Cameron Anderson',
       costumeDesigner: 'Mary Hurd',
       lightingDesigner: 'Jeff Adelberg',
       soundDesigner: 'Dewey Dellay',
       stageManager: 'Hannah Uher',
       publisher: 'Broadway Play Publishing Inc, NYC',
-	  });
-});
-
-router.get('/fefu/notes',function(req, res, next){
-	res.render('notes',
-    {
+  },
+ notes:
+   {
       notes: [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
-          people: 'Joelle Robinson',
+          people: 'Joelle Robinson!!',
           role: 'Assistant Director'
         },
         {
@@ -37,12 +30,10 @@ router.get('/fefu/notes',function(req, res, next){
           people: 'Andrew Child',
           role: 'Assistant Director'
         }
-      ]
-    });
-});
+      ],
+    },
 
-router.get('/fefu/cast',function(req, res, next){
-	res.render('cast',
+  cast:
   {
     title: 'Fefu & Her Friends',
     cast: [
@@ -90,16 +81,10 @@ router.get('/fefu/cast',function(req, res, next){
           location: 'Evening'
         }
       ]
-  });
-});
+  },
 
-router.get('/fefu/bio',function(req, res, next){
-	res.render('bio',{} );
-});
-
-router.get('/fefu/ps',function(req, res, next){
-	res.render('ps2',
-  {
+  ps:
+     {
     prodStaff: [
               {
                 role: 'Assistant Director',
@@ -183,12 +168,10 @@ router.get('/fefu/ps',function(req, res, next){
                  'Candice Jiang', 'Emily Kaplan', 'Carmen Lopez-Landaverde']
               }
           ]
-  });
-});
+  },
 
-router.get('/fefu/friends',function(req, res, next){
-	res.render('friends',
-  {
+  friends:
+     {
     producerCircle:
       [
         {
@@ -369,8 +352,51 @@ router.get('/fefu/friends',function(req, res, next){
       ],
       notes: 'We were so fortunate to have documentary filmmaker Michelle Memran and award winning theater director join us for rehearsals. Michelle has spent the last couple of years making a film about the life and work for Maria Irene Fornes entitled ‘The Rest I Make Up’. For more information, please go to therestimakeup.com.',
       comments: ' The 2017-18 Brandeis Department of Theater Arts season is made possible through generous support from the Harold and Mimi Steinberg Charitable Trust; the Laurie Foundation; the Robin, Barbara and Malcolm L. Sherman Endowment for the Performing Arts; the Brandeis Arts Council; the Herbert and Kim Marie Beigel New Play Fund; and the Poses Fund.'
-    });
+    },
+
+
+};
+
+plays={fefu:fefu};
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
 });
+
+router.get('/:play/:page',function(req, res, next){
+    var playname=req.params.play;
+    var pagename = req.params.page;
+    console.log('getting title for '+playname+"/"+pagename);
+    res.render(pagename, plays[playname][pagename]);
+});
+
+/*
+router.get('/:play/notes',function(req, res, next){
+    var playname=req.params.play;
+    res.render('notes',plays[playname].dirnotes)
+});
+
+router.get('/:play/cast',function(req, res, next){
+    var playname=req.params.play;
+	res.render('cast',plays[playname].cast);
+});
+
+router.get('/fefu/bio',function(req, res, next){
+    var playname=req.params.play;
+	res.render('bio',{} );
+});
+
+router.get('/fefu/ps',function(req, res, next){
+    var playname=req.params.play;
+	res.render('ps2',plays.fefu.ps2);
+});
+
+router.get('/fefu/friends',function(req, res, next){
+    var playname=req.params.play;
+	res.render('friends',plays.fefu.friends);
+});
+*/
 
 router.get('/itw',function(req, res, next){
 	res.render('title',

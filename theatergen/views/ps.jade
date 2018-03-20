@@ -1,0 +1,29 @@
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/ps.css')
+    .wrapper
+      .one
+        center
+          br
+          p.bottom(style='font-size:275%; font-family:optima;')
+            b Production Staff
+        ul.leaders(style='font-size:170%; font-family:optima;')
+          each val in prodStaff
+            li
+              span= val.role
+              if val.people.length > 3
+                each person, index in val.people
+                  if index % 2 == 0 && index != 0
+                    br
+                    span
+                  if index == val.people.length-1
+                    span= person
+                  else
+                    span= person+','
+              else
+                span= val.people
+        center
+          p.times.double(style='font-size:300%')
+            | Every time I listen to Fornes, or read or see one of her plays, I feel this: she breathes, has always breathed, a finer, purer, sharper air.”
+            br
+            |           Tony Kushner
