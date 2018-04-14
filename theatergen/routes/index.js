@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-fefu = 
+fefu =
 {
  title:
   {
@@ -22,7 +22,7 @@ fefu =
       notes: [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
-          people: 'Joelle Robinson!!',
+          people: 'Joelle Robinson',
           role: 'Assistant Director'
         },
         {
