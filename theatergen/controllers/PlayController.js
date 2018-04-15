@@ -41,7 +41,7 @@ playController.save = function(req, res) {
       console.log(err);
       res.render("../views/plays/create");
     } else {
-      console.log("Successfully created a play.");
+      console.log("Successfully created an play.");
       res.redirect("/plays/show/"+play._id);
     }
   });

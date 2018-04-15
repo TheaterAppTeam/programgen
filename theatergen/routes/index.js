@@ -5,7 +5,7 @@ fefu =
 {
  title:
   {
-      title:'Fefu and her Friends',
+      title:'Fefu & Her Friends',
       chair: 'Susan Dibble',
       artisticDirector: 'Robert Walsh',
                   playwright:'María Irene Fornés',

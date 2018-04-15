@@ -1,0 +1,16 @@
+#main {
+  border-style: dashed;
+  border-spacing: 10px;
+  border-width: 2px;
+  padding: 25px;
+}
+
+c {
+  font-size: 300%;
+}
+d {
+  font-size: 200%;
+}
+e {
+  font-size: 175%;
+}

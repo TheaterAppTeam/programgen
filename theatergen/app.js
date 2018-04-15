@@ -10,6 +10,27 @@ var users = require('./routes/users');
 
 var app = express();
 
+//mongooseDB setup
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://fatima96:twilight1@ds213239.mlab.com:13239/theaterapp';
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+var Schema = mongoose.Schema;
+var AuthorSchema = new Schema(
+  {
+    first_name: {type: String, required: true, max: 100},
+    family_name: {type: String, required: true, max: 100},
+    date_of_birth: {type: Date},
+    date_of_death: {type: Date},
+  }
+);
+var Author = mongoose.model("Author", AuthorSchema);
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
