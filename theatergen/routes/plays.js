@@ -37,8 +37,4 @@ router.post('/delete/:id', function(req, res, next) {
   play.delete(req, res);
 });
 
-router.get('/titlepage/:id', function(req,res) {
-	play.titlepage(req, res);
-});
-
 module.exports = router;
