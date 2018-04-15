@@ -1,0 +1,16 @@
+html
+  link(rel='stylesheet', href='/stylesheets/festivalStaff.css')
+  main#main
+    .wrapper
+      .one
+        center
+          p(style='font-size:350%; font-family:Book Antiqua; font-weight:bold;')
+            | Festival Staff
+      .two
+        each val in festivalStaff
+          div(align='left')
+            p(style='font-size:180%; font-family:optima; font-weight:bold;')
+              | #{val.people} (#{val.role})
+            p(style='font-size:170%; font-family:optima;')
+              |#{val.bio}
+            br

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>play Detail</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/plays">play List</a></h3>
+      <h1>play Detail</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td><%= play.name %></td>
+          </tr>
+          <tr>
+            <td>Director</td>
+            <td>:</td>
+            <td><%= play.director %></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3><a href="/plays/edit/<%= play._id%>">EDIT</a></h3>
+      <form action="/plays/delete/<%= play._id%>" method="post">
+        <button type="submit">DELETE</button>
+      </form>
+    </div>
+  </body>
+</html>
