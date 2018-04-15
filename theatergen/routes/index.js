@@ -8,8 +8,8 @@ fefu =
       title:'Fefu & Her Friends',
       chair: 'Susan Dibble',
       artisticDirector: 'Robert Walsh',
-                  playwright:'María Irene Fornés',
-                  director:'Adrianne Krstansky',
+      playwright:'María Irene Fornés',
+      director:'Adrianne Krstansky',
       scenicDesigner: 'Cameron Anderson',
       costumeDesigner: 'Mary Hurd',
       lightingDesigner: 'Jeff Adelberg',
@@ -19,7 +19,8 @@ fefu =
   },
  notes:
    {
-      notes: [
+      notes:
+      [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
           people: 'Joelle Robinson',
@@ -419,6 +420,26 @@ router.get('/festival/festival-staff', function(req, res, next) {
           bio: "Lauren is a stage manager in the Boston area. Credits include: American Repertory Theatre, Lyric Stage Company, Boston Opera Collaborative, North Shore Music Theatre, Harvard University, Suffolk University, Poets’ Theatre, Israeli Stage, Boston Ballet and Actors’ Shakespeare Project. She is a graduate of Suffolk University."
         }
     ]
+  });
+});
+
+router.get('/festival/pearls', function(req, res, next) {
+  res.render('pearls',
+  {
+      title: 'From Pearls to Hoops',
+      directors: 'Shaquan McDowell and Keturah Walker',
+      playwright: 'Keturah Walker',
+      cast: [ 'Salena Deane', 'Will Jones', 'Shaquan McDowell', 'Tamera Tarwoe', 'Tyffany English', 'Lauren Komer', 'Hangil Ryu', 'Keturah Walker', 'Nyomi White'],
+      stageManager: 'Renata Leighton',
+      notes:
+        [
+          {
+            paragraph: "Honestly, this project could not have been at all possible without the love and support from so many people. I would like to thank Professor Derron Wallace, Michelle Dennis, My entire cast, Annkatrine Gates, Brandeis Atlanta Posse 4 (otherwise known as Trap Posse 2), Kendra Yarbor, Yolanda Buford, Virgil Walker, my grandparents, my siblings, Deborah Parker, Jonah Garcia, Rayelle Garner, Toxic Majorette Dance line, Jasmine Purnell, Lindsey McWorter, Brandon Green, Will Chalmus, Jamie Parham, Alicia Hyland, Bonnie Williams, Jacqui Parker, Audrey Potter, Adrianne Krstansky, Shaquan McDowell, Renata Leighton, Chris Tedford, Ben Johnson, Steve Deptula, Emily McCourt, Jen Cleary, Susan Dibble, Brandeis Black Student Organization, Women of Color Alliance, Toxic Majorette Dance Line, and all of my best friends! Luzi Altman, Jaelen Hysaw, Cornelius Sanford and My DR Friends! "
+          },
+          {
+            paragraph: "This project is intended to encourage and promote a change in theater, not only at Brandeis, but in all communities. Thank you to all who came to support! Please feel free to contact me via email keturahsemail@gmail.com with any feedback or methods of support!"
+          }
+        ]
   });
 });
 
