@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/*fefu = 
+fefu =
 {
  title:
   {
@@ -22,7 +22,7 @@ var router = express.Router();
       notes: [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
-          people: 'Joelle Robinson!!',
+          people: 'Joelle Robinson',
           role: 'Assistant Director'
         },
         {
@@ -353,15 +353,73 @@ var router = express.Router();
       notes: 'We were so fortunate to have documentary filmmaker Michelle Memran and award winning theater director join us for rehearsals. Michelle has spent the last couple of years making a film about the life and work for Maria Irene Fornes entitled ‘The Rest I Make Up’. For more information, please go to therestimakeup.com.',
       comments: ' The 2017-18 Brandeis Department of Theater Arts season is made possible through generous support from the Harold and Mimi Steinberg Charitable Trust; the Laurie Foundation; the Robin, Barbara and Malcolm L. Sherman Endowment for the Performing Arts; the Brandeis Arts Council; the Herbert and Kim Marie Beigel New Play Fund; and the Poses Fund.'
     },
-
-
 };
 
-plays={fefu:fefu};*/
+festival =
+{
+  // fesStaff:
+  // [
+  //   {
+  //     people: 'Alicia Hyland',
+  //     role: 'Executive Director',
+  //     bio: "Alicia has worked with the Senior Festival in a variety of capacities over the last seven years, and is thrilled to be a part of the growth of this program. At Brandeis, Alicia has been the Academic Administrator for the past fourteen years, taught several courses, and directed readings of new and existing plays. Alicia received her MFA in Creative Writing from Lesley University and has had work placed in a variety of literary magazines, including Mason's Road and Fwriction Review."
+  //   },
+  //   {
+  //     people: 'Alex Jacobs',
+  //     role: 'Assistant Director',
+  //     bio: 'Alex Jacobs is an Adjunct Professor and MFA ‘14 Acting graduate at Brandeis. He is proud to be involved in the festival supporting these talented seniors. He was most recently seen on the Brandeis stage in Martyr, Shoes On, Shoes Off, and Cabaret, among others. Alex received his undergraduate degree in Theatre from the University of Leeds in England and the University of Memphis, Tennessee. His Regional Credits include: Steve (Zeitgeist),The T Party (Company One), The End of the World (Boston Actors Theatre), The 39 Steps (Winnipesaukee Playhouse) and Animals out of Paper (Hampstead Theatre), the last of which he received a New Hampshire Theatre Award for Best Supporting Actor in a Professional Comedy/Drama. Alex can be seen this April in The Lyons, at the Boston Center for the Arts.'
+  //   }
+  //   ,
+  //   {
+  //     people: 'Emily McCourt',
+  //     role: 'Lighting Designer',
+  //     bio: "Emily is a Boston-area set and lighting designer. This is Emily's fourth year working on the Brandeis Senior Festival. Emily has designed for many local theatre groups, including GAN-e-meed Theatre Project, Theatre on Fire, Bad Habit Productions, The Longwood Players, Argos Productions, Happy Medium Theatre, Sleeping Weazel, Boston Public Works and Worcester County Light Opera Company."
+  //   }
+  //   ,
+  //   {
+  //     people: 'Lauren Burke',
+  //     role: 'Production Stage Manager',
+  //     bio: "Lauren is a stage manager in the Boston area. Credits include: American Repertory Theatre, Lyric Stage Company, Boston Opera Collaborative, North Shore Music Theatre, Harvard University, Suffolk University, Poets’ Theatre, Israeli Stage, Boston Ballet and Actors’ Shakespeare Project. She is a graduate of Suffolk University."
+  //   }
+  // ]
+};
+
+plays={fefu:fefu, festival:festival};
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
+});
+
+router.get('/festival/festival-staff', function(req, res, next) {
+  res.render('festival-staff',
+    {
+      festivalStaff:
+      [
+        {
+          people: 'Alicia Hyland',
+          role: 'Executive Director',
+          bio: "Alicia has worked with the Senior Festival in a variety of capacities over the last seven years, and is thrilled to be a part of the growth of this program. At Brandeis, Alicia has been the Academic Administrator for the past fourteen years, taught several courses, and directed readings of new and existing plays. Alicia received her MFA in Creative Writing from Lesley University and has had work placed in a variety of literary magazines, including Mason's Road and Fwriction Review."
+        },
+        {
+          people: 'Alex Jacobs',
+          role: 'Assistant Director',
+          bio: 'Alex Jacobs is an Adjunct Professor and MFA ‘14 Acting graduate at Brandeis. He is proud to be involved in the festival supporting these talented seniors. He was most recently seen on the Brandeis stage in Martyr, Shoes On, Shoes Off, and Cabaret, among others. Alex received his undergraduate degree in Theatre from the University of Leeds in England and the University of Memphis, Tennessee. His Regional Credits include: Steve (Zeitgeist),The T Party (Company One), The End of the World (Boston Actors Theatre), The 39 Steps (Winnipesaukee Playhouse) and Animals out of Paper (Hampstead Theatre), the last of which he received a New Hampshire Theatre Award for Best Supporting Actor in a Professional Comedy/Drama. Alex can be seen this April in The Lyons, at the Boston Center for the Arts.'
+        }
+        ,
+        {
+          people: 'Emily McCourt',
+          role: 'Lighting Designer',
+          bio: "Emily is a Boston-area set and lighting designer. This is Emily's fourth year working on the Brandeis Senior Festival. Emily has designed for many local theatre groups, including GAN-e-meed Theatre Project, Theatre on Fire, Bad Habit Productions, The Longwood Players, Argos Productions, Happy Medium Theatre, Sleeping Weazel, Boston Public Works and Worcester County Light Opera Company."
+        }
+        ,
+        {
+          people: 'Lauren Burke',
+          role: 'Production Stage Manager',
+          bio: "Lauren is a stage manager in the Boston area. Credits include: American Repertory Theatre, Lyric Stage Company, Boston Opera Collaborative, North Shore Music Theatre, Harvard University, Suffolk University, Poets’ Theatre, Israeli Stage, Boston Ballet and Actors’ Shakespeare Project. She is a graduate of Suffolk University."
+        }
+    ]
+  });
 });
 
 router.get('/:play/:page',function(req, res, next){

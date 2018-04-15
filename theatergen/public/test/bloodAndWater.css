@@ -17,41 +17,38 @@
     text-align: left;
 }
 
-header {background: black;color:white;}
-footer {color:black;}
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
 }
 
+#main{
+  border-style: double;
+  border-spacing: 10px;
+  border-width: 13px;
+  padding: 15px;
+}
+
 .one {
-  grid-column: 3/7;
+  grid-column: 2/8;
   grid-row: 1;
-  background-color: black;
-  color: white;
 }
 
 .two {
-  grid-column: 2/4;
+  grid-column: 2/8;
   grid-row: 2;
 }
 
 .three {
-  grid-column: 6/8;
+  grid-column: 7/8;
   grid-row: 2;
 }
-.four {
-  grid-column: 4/6;
-  grid-row: 3;
-}
-.five {
-  grid-column: 2/8;
-  grid-row: 4;
-}
-.six {
-  grid-column: 2/8;
-  grid-row: 5;
+
+.column{
+  width: 100;
+  font-size:100%;
+  font-family:optima;
+  text-align: center;
 }
