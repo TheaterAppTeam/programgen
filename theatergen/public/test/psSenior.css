@@ -105,6 +105,7 @@ ul.leaders span + span {
 
 right{
   text-align: right;
+  float: right;
 }
 
 e{
