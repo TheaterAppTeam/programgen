@@ -389,7 +389,7 @@ plays={fefu:fefu, festival:festival};
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('titleSenior', { title: 'Senior Festival 2018' });
 });
 
 router.get('/festival/lucid', function(req, res, next){
@@ -404,8 +404,8 @@ router.get('/festival/bloodAndWater', function(req, res, next){
   res.render('bloodAndWater', {});
 });
 
-router.get('/festival/Shakespeare', function (req, res, next){
-  res.render('Shakespeare', {});
+router.get('/festival/shakespeare', function (req, res, next){
+  res.render('shakespeare', {});
 });
 
 router.get('/festival/festivalschedule', function(req, res, next){
