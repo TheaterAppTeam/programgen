@@ -392,6 +392,22 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/festival/lucid', function(req, res, next){
+  res.render('lucid', {});
+});
+
+router.get('/festival/queeringTheCape', function(req, res, next){
+  res.render('queering_the_cape', {});
+});
+
+router.get('/festival/bloodAndWater', function(req, res, next){
+  res.render('bloodAndWater', {});
+});
+
+router.get('/festival/Shakespeare', function (req, res, next){
+  res.render('Shakespeare', {});
+});
+
 router.get('/festival/festival-staff', function(req, res, next) {
   res.render('festival-staff',
     {
