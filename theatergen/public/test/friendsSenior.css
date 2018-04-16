@@ -32,6 +32,11 @@ a{
 }
 
 
+ind{
+  text-indent:50px;
+}
+
+
   .column{
     float: left;
     width: 650;
@@ -87,7 +92,7 @@ a{
 
 .four{
   grid-column: 2/8;
-  grid-row: 13;
+  grid-row: 14;
 }
 
 
@@ -95,4 +100,5 @@ p.double{
   border-style: double;
   border-spacing: 25px;
   border-width: 10px;
+  padding: 35px;
 }

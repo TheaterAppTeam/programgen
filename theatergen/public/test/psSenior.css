@@ -1,0 +1,129 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+#main{
+  border-style: dashed;
+  border-spacing: 10px;
+  border-width: 4px;
+  padding: 25px;
+}
+
+#box{
+  border-style: solid;
+  font-family:optima;
+  font-size: 125%;
+}
+  p.bottom {
+    border-bottom: 10px double black;
+  }
+
+  p.role{
+    text-align: left;
+  }
+  p.person{
+    text-align: right;
+  }
+  .column{
+    float: left;
+    width: 650;
+  }
+
+  .row:after{
+    content: "";
+    display:table;
+    clear: both;
+  }
+
+  p.double{
+    border-style: double;
+    border-spacing: 15px;
+    border-width: 10px;
+  }
+  p.times{
+    font-family: "Times New Roman", Times, serif;
+  }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 2/8;
+  grid-row: 1;
+
+}
+.two{
+  grid-column: 2/8;
+  grid-row: 3;
+}
+
+ul.leaders {
+    max-width: 50em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+.two {
+  grid-column: 2/8;
+  grid-row: 2;
+}
+
+right{
+  text-align: right;
+}
+
+e{
+  font-size: 145%;
+  font-style: optima;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
