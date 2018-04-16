@@ -8,8 +8,8 @@ fefu =
       title:'Fefu & Her Friends',
       chair: 'Susan Dibble',
       artisticDirector: 'Robert Walsh',
-                  playwright:'María Irene Fornés',
-                  director:'Adrianne Krstansky',
+      playwright:'María Irene Fornés',
+      director:'Adrianne Krstansky',
       scenicDesigner: 'Cameron Anderson',
       costumeDesigner: 'Mary Hurd',
       lightingDesigner: 'Jeff Adelberg',
@@ -19,7 +19,8 @@ fefu =
   },
  notes:
    {
-      notes: [
+      notes:
+      [
         {
           note: 'Fefu & Her Friends has been a project of discovery. Through countless hours of rehearsals and workshops, we as a cast unearthed hidden gems placed on Earth by María Irene Fornés. It was the celebration of diverse women and the ordinary that drove me to the play. And it was Fornes’ free spirit and natural curiosity that kept me entangled in Fefu’s world. As a collective we uncovered questions and thoughts that were previously deeply embedded in my unconsciousness; facing these thoughts together made me realize a lot about navigating the world around me. Please enjoy a moment of realness with Fefu and her friends. Allow yourself see a world, a light, a guardian—in everything.',
           people: 'Joelle Robinson',
@@ -391,6 +392,22 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/festival/lucid', function(req, res, next){
+  res.render('lucid', {});
+});
+
+router.get('/festival/queeringTheCape', function(req, res, next){
+  res.render('queering_the_cape', {});
+});
+
+router.get('/festival/bloodAndWater', function(req, res, next){
+  res.render('bloodAndWater', {});
+});
+
+router.get('/festival/Shakespeare', function (req, res, next){
+  res.render('Shakespeare', {});
+});
+
 router.get('/festival/festival-staff', function(req, res, next) {
   res.render('festival-staff',
     {
@@ -419,6 +436,105 @@ router.get('/festival/festival-staff', function(req, res, next) {
           bio: "Lauren is a stage manager in the Boston area. Credits include: American Repertory Theatre, Lyric Stage Company, Boston Opera Collaborative, North Shore Music Theatre, Harvard University, Suffolk University, Poets’ Theatre, Israeli Stage, Boston Ballet and Actors’ Shakespeare Project. She is a graduate of Suffolk University."
         }
     ]
+  });
+});
+
+router.get('/festival/pearls', function(req, res, next) {
+  res.render('pearls',
+  {
+      title: 'From Pearls to Hoops',
+      directors: 'Shaquan McDowell and Keturah Walker',
+      playwright: 'Keturah Walker',
+      // cast:
+      //   [
+      //     {
+      //       people: 'Salena Deane',
+      //       role: 'Young KT/Her',
+      //       notes: 'Salena loves theatre, especially when she acts in a role she can connect with. She is an English and Creative Writing major with a pen for poetry. This show is like poetry to her. Keturah is an inspiration for Salena, not only as a prominent black woman figure on campus, but as a friend. She is excited to get the opportunity to do stories, like Keturah’s, justice on the stage. But she is even more excited to help her sister call all of you out on your bullsh*t. #BlackLivesMatter #BlackActorsMatter #BlackWomeninTheatreMatter'
+      //     },
+      //     {
+      //       people: 'Wil Jones',
+      //       role: 'Boy 1/Deonte/Wallace',
+      //       notes: "Wil will graduate this May with a degree in African and Afro-American Studies. Previous roles include Uncle Henry, The Gatekeeper, and a Flying Monkey in the Undergraduate Theater Collective's 2016 production of The Wiz."
+      //     },
+      //     {
+      //       people: 'Shaquan McDowell',
+      //       role: 'Director/Principal',
+      //       notes: "Though majoring in Politics and History with a goal to claim the office of POTUS for
+      //         himself, Shaquan has found the realm of theater to provide an amount of enthusiasm,
+      //         which cannot be found anywhere else. He's starred in productions such as Intimate
+      //         Apparel (2016), The Love of A Nightingale (2015), Columbinus (2015), Rent (2012), can
+      //         be seen as a feature on Al Jazeera America's DocuSeries Edge of Eighteen (2014), and
+      //         director of Amanda Ehrmann's My Dearest Monster (2017). Shaquan is co-founder and
+      //         President of The Purple Party; an independent youth political organization, based out of
+      //         Atlanta"
+      //     },
+      //     {
+      //       people: 'Tamera Tarwoe',
+      //       role: 'Cousin/She',
+      //       notes: "Tamera is a first-year student from Worcester, Massachusetts. She has participated in plays
+      //       such as The Wizard of Oz and The Little Mermaid and did theater in high school. Tamera is
+      //       an aspiring actress and hopes to get more involved in the Theater Department at Brandeis."
+      //     },
+      //     {
+      //       people: 'Tyffany English',
+      //       role: 'Rebecca/Inner BB2',
+      //       notes: "Tyffany is double majoring in Economics and Creativity, the Arts, and Self-Transformation.
+      //       She is from Buford, Georgia and is an Atlanta Posse Scholar. She has theater experience
+      //       working as a costume tech in competition plays and as an actress in The Princess Plays
+      //       and Pride and Prejudice. She was the assistant director of The Love of the Nightingale.
+      //       She is the president of the Fashion Design Club, has been on the Brandeis Cheer squad
+      //       since her freshman year, and has written for HerCampus"
+      //     },
+      //     {
+      //       people: "Lauren Komer",
+      //       role: 'Ms. Parker/Senorita Fefe/Cheerleader/Gabi/Josh',
+      //       notes: "Lauren is planning to pursue a double major in Theater Arts and Musical Theater
+      //       Performance. Komer is a member of the Brandeis University Theater Arts Fellowship. Past
+      //       credits include Brandeis Theater Department’s Into the Woods (Snow White/Ensemble),
+      //       Hold Thy Peace’s A Midsummer Night's Dream (Assistant Director), and the Undergraduate
+      //       Theater Collective’s Blithe Spirit (Assistant Director)."
+      //     },
+      //     {
+      //       people: 'Hangil Ryu',
+      //       role: 'Professor/Inner BB1/Professor 2',
+      //       notes: "Hangil is majoring in Philosophy and minoring in Business and Creativity, the Arts, and
+      //       Social Transformation. Hangil loves philosophy, stand-up comedy, improvisation, and
+      //       electric skateboards. He would like to thank Keturah, Shaquan, and Renata for letting him
+      //       participate in From Pearls to Hoops and a special thanks to his mother for being the most
+      //       awesome human being he knows and for giving him life."
+      //     },
+      //     {
+      //       people: 'Keturah Walker',
+      //       role: "Playwright/Co-director/Actor",
+      //       notes: "Keturah is a senior and Theater Arts major interested in pursuing a career in film acting.
+      //       She has been in several Brandeis University productions including Intimate Apparel,
+      //       Ruined, Fefu and Her Friends, Death of the Last Black Man in the Entire World, The Wiz
+      //       and The Love of the Nightingale. Keturah hopes to illuminate the issues of socio-economic
+      //       disparities and accessibility as it relates to theater and deconstruct the traditionally classist
+      //       space to allow more diverse experiences an opportunity to create art. She also aims to shed
+      //       light on the absence of tenured professors of color in the Brandeis Theater Department in
+      //       hope to diversify the curriculum and cultural consciousness for future students!"
+      //     },
+      //     {
+      //       people: 'Nyomi White',
+      //       role: "Mom/Classroom Student/Parham/LaShawn",
+      //       notes: "Nyomi is majoring in English and minoring in Legal Studies and Journalism. She has
+      //       participated mostly in Undergraduate Theater Collective shows such as Urinetown: The
+      //       Musical (Little Sally), Alice in Wonderland (Cheshire Cat) and Once Upon a Mattress (the
+      //       Wizard). She would like to thank her friends and family for supporting her and Keturah for
+      //       inspiring her to continue to talk about race within the context of theater. Enjoy!"
+      //     }
+      stageManager: 'Renata Leighton',
+      notes:
+        [
+          {
+            paragraph: "Honestly, this project could not have been at all possible without the love and support from so many people. I would like to thank Professor Derron Wallace, Michelle Dennis, My entire cast, Annkatrine Gates, Brandeis Atlanta Posse 4 (otherwise known as Trap Posse 2), Kendra Yarbor, Yolanda Buford, Virgil Walker, my grandparents, my siblings, Deborah Parker, Jonah Garcia, Rayelle Garner, Toxic Majorette Dance line, Jasmine Purnell, Lindsey McWorter, Brandon Green, Will Chalmus, Jamie Parham, Alicia Hyland, Bonnie Williams, Jacqui Parker, Audrey Potter, Adrianne Krstansky, Shaquan McDowell, Renata Leighton, Chris Tedford, Ben Johnson, Steve Deptula, Emily McCourt, Jen Cleary, Susan Dibble, Brandeis Black Student Organization, Women of Color Alliance, Toxic Majorette Dance Line, and all of my best friends! Luzi Altman, Jaelen Hysaw, Cornelius Sanford and My DR Friends! "
+          },
+          {
+            paragraph: "This project is intended to encourage and promote a change in theater, not only at Brandeis, but in all communities. Thank you to all who came to support! Please feel free to contact me via email keturahsemail@gmail.com with any feedback or methods of support!"
+          }
+        ]
   });
 });
 

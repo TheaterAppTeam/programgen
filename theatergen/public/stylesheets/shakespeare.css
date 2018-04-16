@@ -1,12 +1,13 @@
 #main {
   border-style: dashed;
   border-spacing: 10px;
-  border-width: 2px;
+  border-width: 4px;
   padding: 25px;
 }
 
 c {
   font-size: 300%;
+  font-family: optima;
 }
 d {
   font-size: 200%;
