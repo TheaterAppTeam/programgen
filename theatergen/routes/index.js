@@ -412,10 +412,12 @@ router.get('/festival/festivalschedule', function(req, res, next){
   res.render('festivalschedule', {});
 });
 
-router.get('/festival/psSenior', function(req, res, next){
-  res.render('psSenior', {});
+router.get('/festival/psSenior2', function(req, res, next){
+  res.render('psSenior2', {});
 });
-
+router.get('/festival/about', function(req, res, next){
+  res.render('about', {});
+});
 router.get('/festival/festival-staff', function(req, res, next) {
   res.render('festival-staff',
     {

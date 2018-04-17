@@ -1,0 +1,138 @@
+doctype html
+html(lang='en')
+  head
+    link(rel='stylesheet', href='/navigationbar.css')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') EZ Plays
+        ul.nav.navbar-nav
+          li.active
+            a(href='/festival/titleSenior') Home
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Plays
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='/festival/Pearls') From Pearls to Hoops
+              li
+                a(href='/festival/queeringTheCape') Queering the Cape
+              li
+                a(href='/festival/Shakespeare') Shakespeare Girlz
+              li
+                a(href='/festival/lucid') Lucid
+              li
+                a(href='/festival/bloodAndWater') Blood and Water
+          li
+            a(href='/festival/festivalschedule') Schedule
+          li
+            a(href='/festival/festival-staff') Festival Staff
+          li
+            a(href='/festival/psSenior2') Production Staff
+          li
+            a(href='/festival/friendsSenior') Friends
+          li
+            a(href='/festival/about') About
+
+head
+  link(rel='stylesheet', href='/stylesheets/about.css')
+  main#main
+    .wrapper
+      .one
+        center
+          heading
+            | About Us
+      .two
+        center
+          project
+            | Our Project:
+          br
+          br
+          description
+            | EZ-Plays is a web application that was designed, built and curated by three Brandeis University Computer Science seniors.
+            | EZ-Plays auto generates play programs that can be easily accessed to audiences while keeping the nostalgic feel of a physical programs.
+            | The idea of this independent study project originated as an extentsion from Brandeis Theater Company's production of
+            i  The Spaces Between Us
+            |  in 2017.
+            |         EZ-Plays aims to reduce paper waste in the theater and push for new sustainability tactics from the Brandeis University administration.
+      .three
+        br
+        br
+        center
+          project
+            | Contributors:
+        br
+        br
+        fatima
+          .row
+            .column
+              img(src='/Fatima.jpg', alt='Joelle Robinson', width='250', height='300')
+            .column
+              person
+                name
+                  | Fatima Hussaini
+                br
+                br
+                b Class:
+                |  2018
+                br
+                b Majors:
+                |  Computer Science, Math
+                br
+                b Bio:
+        joelle
+          .row
+            .column
+              img(src='Joelle.jpg', alt='Joelle Robinson', width='250', height='300')
+            .column
+              person
+                name
+                  | Joelle Robinson
+                br
+                br
+                b Class:
+                |  2018
+                br
+                b Majors:
+                |  Computer Science
+                br
+                b Minors:
+                |  Theater Arts, East Asian Studies
+                br
+                b Bio:
+        demi
+          .row
+            .column
+              img(src='Demi.jpg', alt='Joelle Robinson', width='250', height='300')
+            .column
+              person
+                name
+                  | Demi Zhang
+                br
+                br
+                b Class:
+                |  2018
+                br
+                b Majors:
+                |  Computer Science, East Asian Studies
+                br
+                br
+                |           Demi is honored to have the opportunity to work on this project with the Brandeis Theater Arts Department.
+                |           She has always been really passionate about developing useful technology in a variety of different areas.
+                |           In high school, she designed and developed the website for her high school's Guidance Department. During the summer of
+                |           her sophomore year of college, she participated in JBS and created a voice-integrated cooking recipe application called
+                |           "Chef's Assistant" with Gerriana Cohen and Fatima Hussaini. She wants to thank Professor Hickey and Alicia Hyland for
+                |           giving her the opportunity to work on this project as well as Joelle Robinson and Fatima Hussaini for being her
+                |           Computer Science buddies.
+        .four
+          br
+          br
+          description
+            | Please let us know how we can improve this application by using this link:
