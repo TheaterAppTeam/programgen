@@ -22,7 +22,7 @@
 }
 
 .september{
-  font-size:100%;
+  font-size:150%;
   font-family:optima;
 }
 
@@ -34,6 +34,11 @@ a{
 
 ind{
   text-indent:50px;
+}
+
+comment{
+  font-size:150%;
+  font-family:optima;
 }
 
 
