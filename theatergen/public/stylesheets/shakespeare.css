@@ -11,9 +11,11 @@ c {
 }
 d {
   font-size: 200%;
+  font-family:optima;
 }
 x {
   font-size: 175%;
+  font-family:optima;
 }
 e {
   font-size:170%;
@@ -25,5 +27,6 @@ who {
   font-family:apple chancery
 }
 y {
-  font-size: 150%
+  font-size: 25px;
+  font-family:optima;
 }
