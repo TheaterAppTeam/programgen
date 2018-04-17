@@ -3,8 +3,8 @@
   border-style: dashed;
   border-spacing: 10px;
   border-width: 4px;
-  padding: 30px;
-  font-size: 175%;
+  padding: 10px;
+  font-size: 100%;
   font-family: optima;
 }
 
@@ -21,6 +21,8 @@ e{
 
 left{
     text-align: left;
+    float: left;
+    
 
 }
 
