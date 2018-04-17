@@ -408,6 +408,14 @@ router.get('/festival/Shakespeare', function (req, res, next){
   res.render('Shakespeare', {});
 });
 
+router.get('/festival/festivalschedule', function(req, res, next){
+  res.render('festivalschedule', {});
+});
+
+router.get('/festival/psSenior', function(req, res, next){
+  res.render('psSenior', {});
+});
+
 router.get('/festival/festival-staff', function(req, res, next) {
   res.render('festival-staff',
     {
