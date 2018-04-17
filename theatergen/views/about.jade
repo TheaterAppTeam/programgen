@@ -1,7 +1,6 @@
 doctype html
-html(lang='en')
+html
   head
-    link(rel='stylesheet', href='/navigationbar.css')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
@@ -11,35 +10,41 @@ html(lang='en')
     nav.navbar.navbar-inverse
       .container-fluid
         .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
           a.navbar-brand(href='#') EZ Plays
-        ul.nav.navbar-nav
-          li.active
-            a(href='/festival/titleSenior') Home
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              | Plays
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='/festival/Pearls') From Pearls to Hoops
-              li
-                a(href='/festival/queeringTheCape') Queering the Cape
-              li
-                a(href='/festival/Shakespeare') Shakespeare Girlz
-              li
-                a(href='/festival/lucid') Lucid
-              li
-                a(href='/festival/bloodAndWater') Blood and Water
-          li
-            a(href='/festival/festivalschedule') Schedule
-          li
-            a(href='/festival/festival-staff') Festival Staff
-          li
-            a(href='/festival/psSenior2') Production Staff
-          li
-            a(href='/festival/friendsSenior') Friends
-          li
-            a(href='/festival/about') About
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/festival/titleSenior') Home
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                | Plays
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/festival/Pearls') From Pearls to Hoops
+                li
+                  a(href='/festival/queeringTheCape') Queering the Cape
+                li
+                  a(href='/festival/Shakespeare') Shakespeare Girlz
+                li
+                  a(href='/festival/lucid') Lucid
+                li
+                  a(href='/festival/bloodAndWater') Blood and Water
+            li
+              a(href='/festival/festivalschedule') Schedule
+            li
+              a(href='/festival/festival-staff') Festival Staff
+            li
+              a(href='/festival/psSenior2') Production Staff
+            li
+              a(href='/festival/friendsSenior') Friends
+            li
+              a(href='/festival/about') About
 
 head
   link(rel='stylesheet', href='/stylesheets/about.css')
