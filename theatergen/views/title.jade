@@ -1,59 +1,40 @@
-html
+doctype html
+html(lang='en')
   head
-    link(rel='stylesheet', href='/stylesheets/title.css')
+    link(rel='stylesheet', href='/navigationbar.css')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
   body
-    .wrapper
-      .one
-        .flex-container
-          header
-            h1
-              center Brandeis Department of Theater Arts
-      .two
-        center
-          p(style='font-size:160%; font-family:optima;')
-            | #{chair}
-            br
-            |       Chair
-      .three
-        center
-          p(style='font-size:160%; font-family:optima;')
-            | #{artisticDirector}
-            br
-            |        Artistic Director
-      .four
-        center
-          p(style='font-size:300%; font-family:optima;')
-            | presents
-      .five
-        center
-          h1(style='font-size:650%; font-family:Book Antiqua;')
-            i #{title}
-      .six
-        center
-          p(style='font-size:400%; font-family:Verdana;')
-            | by #{playwright}
-          p(style='font-size:300%; font-family:Verdana;')
-            | Directed by #{director}
-          p(style='font-size:230%; font-family:Verdana;')
-            | Scenic Design by #{scenicDesigner}
-            br
-            br
-            |         Costume Design by #{costumeDesigner}
-            br
-            br
-            |         Lighting Design by #{lightingDesigner}
-            br
-            br
-            |         Sound Design and Original Music by #{soundDesigner}
-            br
-            br
-            |         Stage Managed by #{stageManager}
-  footer
-    center
-      h1
-        | #{title} is produced
-        br
-        |       by special arrangement with #{publisher}
-        br
-        br
-        |       www.broadwayplaypub.com
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') EZ Plays
+        ul.nav.navbar-nav
+          li.active
+            a(href='/festival/titleSenior') Home
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Plays
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='/festival/Pearls') From Pearls to Hoops
+              li
+                a(href='/festival/queeringTheCape') Queering the Cape
+              li
+                a(href='/festival/Shakespeare') Shakespeare Girlz
+              li
+                a(href='/festival/lucid') Lucid
+              li
+                a(href='/festival/bloodAndWater') Blood and Water
+          li
+            a(href='/festival/festivalschedule') Schedule
+          li
+            a(href='/festival/festival-staff') Festival Staff
+          li
+            a(href='/festival/psSenior') Production Staff
+          li
+            a(href='/festival/friendsSenior') Friends
