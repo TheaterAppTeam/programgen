@@ -1,0 +1,94 @@
+
+#main{
+  border-style: dotted;
+  border-spacing: 10px;
+  border-width: 4px;
+  padding: 25px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+
+.one {
+  grid-column: 2/8;
+  grid-row: 1;
+}
+
+.two{
+  grid-column: 2/8;
+  grid-row: 2;
+}
+
+.three{
+  grid-column: 2/8;
+  grid-row: 3;
+}
+
+.four{
+  grid-column: 2/8;
+  grid-row: 4;
+}
+
+heading{
+  font-size:400%;
+  font-family:apple chancery
+}
+
+project{
+  font-size:250%;
+  font-family:optima;
+}
+
+description{
+  font-size:150%;
+  font-family:optima;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+person{
+  font-size:150%;
+  font-family:optima;
+}
+
+name{
+  font-size:130%;
+  font-family:optima;
+}
