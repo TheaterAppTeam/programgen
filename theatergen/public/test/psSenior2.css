@@ -1,0 +1,47 @@
+
+#main{
+  border-style: dashed;
+  border-spacing: 10px;
+  border-width: 4px;
+  padding: 30px;
+  font-size: 175%;
+  font-family: optima;
+}
+
+#box{
+  border-style: solid;
+  font-family:optima;
+  font-size: 90%;
+}
+
+e{
+  font-family:optima;
+  font-size: 120%;
+}
+
+left{
+    text-align: left;
+
+}
+
+right{
+    text-align: right;
+    float: right;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
